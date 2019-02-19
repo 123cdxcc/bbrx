@@ -2,14 +2,7 @@
 export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #Check Root
 [ $(id -u) != "0" ] && { echo "此脚本得需要root环境!"; exit 1; }
-echo -e "此加速bbr需要64位系统，你的系统是否合适"
-echo -e "1.是\n2.否"
-read -p "输入数字以选择:" hex
-while [[ ! "${hex}" =~ ^[1-2]$ ]]
-do
-	echo -e "${Error} 无效输入"
-	echo -e "${Info} 请重新选择" && read -p "输入数字以选择:" hex
-done
+echo -e "此加速bbr需要64位系统"
 #Check OS
 if [ -n "$(grep 'Aliyun Linux release' /etc/issue)" -o -e /etc/redhat-release ];then
     OS=CentOS
