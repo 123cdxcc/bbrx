@@ -2,6 +2,10 @@ abc
 de
 dasd
 hrrenheren
+<<<<<<< HEAD
 grgr
 111
 222
+=======
+grgr
+>>>>>>> 8ff50ce1ac571e35cb82fcdd6cdceeeccf043413
